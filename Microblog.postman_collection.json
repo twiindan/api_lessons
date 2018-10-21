@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "8617cfe4-ed08-410b-b49d-7b1d29a86539",
+		"name": "Microblog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tokens",
+			"item": [
+				{
+					"name": "Get token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "24abb8c1-eca8-4f50-9176-8261e95854e8",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"tests[\"Body has token\"] = responseBody.has(\"token\")",
+									"postman.setEnvironmentVariable(\"TokenID\", data.token)",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Testing83",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "twiindan",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{hostname}}/tokens",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"tokens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Revoke token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TokenID}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{hostname}}/tokens",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"tokens"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get user Information",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TokenID}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{hostname}}/users/1",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TokenID}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{hostname}}/users",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user followers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TokenID}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{hostname}}/users/1/followers",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"followers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User followed",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TokenID}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{hostname}}/users/1/followed",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"followed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"Gemma\",\r\n  \"password\": \"Testing83\",\r\n  \"email\": \"test1@test.com\"\r\n}"
+						},
+						"url": {
+							"raw": "{{hostname}}/users",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TokenID}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"Sauron\",\r\n  \"password\": \"Testing83\",\r\n  \"email\": \"test2@test.com\"\r\n}"
+						},
+						"url": {
+							"raw": "{{hostname}}/users/1",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

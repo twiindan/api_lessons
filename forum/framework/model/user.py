@@ -1,16 +1,9 @@
 class User(object):
 
     def __init__(self, name=None, username=None, password=None, role=None, email=None):
-        self.name = name
-        self.username = username
-        self.password = password
-        self.role = role
-        self.email = email
+        #DEFINE THE PARAMETERS OF USER OBJECT
+        pass
 
     def to_dict(self):
-        return  {'name': self.name,
-                'username': self.username,
-                'password': self.password,
-                'role': self.role,
-                'email': self.email
-                }
+        #DEFINE THE DICTIONARY TO RETURN
+        pass

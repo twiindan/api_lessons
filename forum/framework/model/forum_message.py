@@ -6,4 +6,6 @@ class ForumMessage(object):
         self.message = message
 
     def to_dict(self):
-        return vars(self)
+        return {'theme': self.theme,
+                'subject': self.subject,
+                'message': self.message}

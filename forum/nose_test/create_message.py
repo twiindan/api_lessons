@@ -7,7 +7,7 @@ __author__ = 'arobres'
 from nose.tools import assert_equals, assert_true
 
 
-class TestCreateUser():
+class TestCreateMessage():
 
     forum_url = 'https://api-testing-conference.herokuapp.com/v1.0/forum'
 

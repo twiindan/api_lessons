@@ -14,6 +14,8 @@ SERVER_ROOT = 'https://{}'.format(FORUM_HOSTNAME)
 TOKENS_PATTERN = '{url_root}/tokens'
 USERS_PATTERN = '{url_root}/users'
 USER_INFO_PATTERN = '{url_root}/users/{user_id}'
+FOLLOWERS_PATTERN = '{url_root}/users/{user_id}/followers'
+FOLLOWED_PATTERN = '{url_root}/users/{user_id}/followed'
 
 
 class MicroblogApi(object):
@@ -86,3 +88,9 @@ class MicroblogApi(object):
 
     def modify_user_information(self, headers=None, user_id=None, body=None):
         return self._call_api(pattern=USER_INFO_PATTERN, method=PUT, headers=headers, user_id=user_id, body=body)
+
+    def get_followers(self, headers=None, user_id=None):
+        return self._call_api(pattern=FOLLOWERS_PATTERN, method=GET, headers=headers, user_id=user_id)
+
+    def get_followed(self, headers=None, user_id=None):
+        return self._call_api(pattern=FOLLOWED_PATTERN, method=GET, headers=headers, user_id=user_id)

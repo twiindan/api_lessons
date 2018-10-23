@@ -80,5 +80,5 @@ class MicroblogApi(object):
     def create_user(self, body=None):
         return self._call_api(pattern=USERS_PATTERN, method=POST, body=body)
 
-    def get_user_information(self, headers=None):
-        return self._call_api(pattern=USER_INFO_PATTERN, method=GET, headers=headers)
+    def get_user_information(self, headers=None, user_id=None):
+        return self._call_api(pattern=USER_INFO_PATTERN, method=GET, headers=headers, user_id=user_id)

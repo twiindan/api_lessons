@@ -8,6 +8,7 @@ from solution.core.configuration import FORUM_HOSTNAME, HEADERS
 POST = 'post'
 GET = 'get'
 DELETE = 'delete'
+PUT = 'put'
 
 SERVER_ROOT = 'https://{}'.format(FORUM_HOSTNAME)
 TOKENS_PATTERN = '{url_root}/tokens'
@@ -82,3 +83,6 @@ class MicroblogApi(object):
 
     def get_user_information(self, headers=None, user_id=None):
         return self._call_api(pattern=USER_INFO_PATTERN, method=GET, headers=headers, user_id=user_id)
+
+    def modify_user_information(self, headers=None, user_id=None, body=None):
+        return self._call_api(pattern=USER_INFO_PATTERN, method=PUT, headers=headers, user_id=user_id, body=body)

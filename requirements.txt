@@ -1,0 +1,4 @@
+nose
+ddt
+requests
+ujson

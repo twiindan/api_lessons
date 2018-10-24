@@ -1,4 +1,4 @@
 swagger:
 
-microblog --> https://app.swaggerhub.com/apis/twiindan/microblog-testing/1.0.0
-forum --> https://app.swaggerhub.com/apis/twiindan/forum-api/1.0.0-oas3-oas3
+microblog --> https://app.swaggerhub.com/apis-docs/twiindan/microblog-testing/1.0.0
+forum --> https://app.swaggerhub.com/apis-docs/twiindan/forum-api/1.0.0-oas3-oas3

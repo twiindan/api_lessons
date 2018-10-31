@@ -5,7 +5,7 @@
 
 
 def spam():       # Functions are declared with the 'def' keyword, its name, parentheses and a colon
-    print "spam"  # Remember to use indentation!
+    print("spam")  # Remember to use indentation!
 
 spam()  # Functions are executed with its name followed by parentheses
 
@@ -14,13 +14,13 @@ spam()  # Functions are executed with its name followed by parentheses
 
 
 def eggs(arg1):         # Functions arguments are declared inside the parentheses
-    print "eggs", arg1
+    print("eggs", arg1)
 
-spam("eggssss")  # Function calls specify arguments inside parentheses
+eggs("eggssss")  # Function calls specify arguments inside parentheses
 
 
 def func(arg1, arg2, arg3):         # There is no limit of arguments
-    print "func", arg1, arg2, arg3
+    print("func", arg1, arg2, arg3)
 
 func("spam", "eggs", "fooo")
 
@@ -28,14 +28,14 @@ func("spam", "eggs", "fooo")
 def my_sum(arg1, arg2):
     return arg1 + arg2    # Use the return keyword to output any result
 
-print my_sum(3, 5)
+print(my_sum(3, 5))
 
 
-print my_sum(3.333, 5)
-print my_sum("spam", "eggs")  # Given that Python is a dynamic language we can reuse the same method
+print(my_sum(3.333, 5))
+print(my_sum("spam", "eggs"))  # Given that Python is a dynamic language we can reuse the same method
 
 
-print my_sum(arg2="spam", arg1="eggs")  # Use keyword arguments to call arguments in different order
+print(my_sum(arg2="spam", arg1="eggs"))  # Use keyword arguments to call arguments in different order
 
 
 
@@ -45,17 +45,17 @@ print my_sum(arg2="spam", arg1="eggs")  # Use keyword arguments to call argument
 def my_pow(arg1, arg2=2):  # It is possible to define deault values for the arguments, always after arguments without default values
     return arg1 ** arg2
 
-print my_pow(3)
+print(my_pow(3))
 
 
 def my_func(arg1, arg2=2, arg3=3, arg4=4):
     return arg1 ** arg2 + arg3 ** arg4
 
-print my_func(3, arg3=2)  # Use keyword arguments to call skip some of the arguments with default value
+print(my_func(3, arg3=2))  # Use keyword arguments to call skip some of the arguments with default value
 
 
 def my_func(arg1=1, arg2=2, *args):  # This arbitrary list is a (kind-off) tuple of positional arguments
-    print args
+    print(args)
     return arg1 + arg2
 
 my_func(2, 3)
@@ -67,7 +67,7 @@ my_func(2, 3, 5, 7)
 
 
 def my_func(arg1=1, arg2=2, **kwargs):  # This arbitrary 'args' list is a (kind-off) tuple of positional arguments
-    print kwargs
+    print(kwargs)
     return arg1 + arg2
 
 my_func(2, 3)

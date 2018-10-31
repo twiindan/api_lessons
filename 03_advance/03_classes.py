@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-u'''
+'''
 MOD 11: Classes
 '''
 
@@ -12,7 +12,7 @@ class Spam:       # 'class' keyword, camel case class name and colon :
 
 spammer = Spam()  # Class instantiation: spammer becomes an instance of Spam
 
-print spammer
+print(spammer)
 
 
 # Easy, right?
@@ -26,8 +26,8 @@ class Eggs(Spam):                       # Ancestor superclasses inside parenthes
         self.attr = attr_val
 
     def method(self, arg1, arg2=None):  # Method declaration. Indented and receiving self (the instance)
-        print "'method' of", self
-        print self.attr, arg1, arg2     # Access instance attributes using self with a dot .
+        print("'method' of", self)
+        print(self.attr, arg1, arg2)     # Access instance attributes using self with a dot .
 
     def second_method(self):
         self.attr = 99.99
@@ -39,18 +39,18 @@ class Eggs(Spam):                       # Ancestor superclasses inside parenthes
 
 egger = Eggs(12.345)                    # Provide __init__ arguments in the instantiation
 
-print egger
+print(egger)
 
-print egger.attr                        # Retrieve instance attributes with a dot
+print(egger.attr)                        # Retrieve instance attributes with a dot
 
-print egger.a_class_attr                # Retrieve class attributes with a dot
+print(egger.a_class_attr)                # Retrieve class attributes with a dot
 
-print Eggs.a_class_attr
+print(Eggs.a_class_attr)
 
 egger.a_class_attr = "new value"
 
-print egger.a_class_attr
-print Eggs.a_class_attr
+print(egger.a_class_attr)
+print(Eggs.a_class_attr)
 
 #===============================================================================
 # - Class attributes can be retrieved directly from the class
@@ -85,16 +85,16 @@ class Spam(object):
     spam_class_attr = "spam"                             # Class attributes must have value always (you may use None...)
 
     def spam_method(self):
-        print "spam_method", self, self.spam_class_attr
-        print self.__class__
+        print("spam_method", self, self.spam_class_attr)
+        print(self.__class__)
 
 
 class Eggs(object):
     eggs_class_attr = "eggs"
 
     def eggs_method(self):
-        print "eggs_method", self, self.eggs_class_attr
-        print self.__class__
+        print("eggs_method", self, self.eggs_class_attr)
+        print(self.__class__)
 
 
 class Fooo(Spam, Eggs):                                  # Specify a list of ancestor superclasses
@@ -103,8 +103,8 @@ class Fooo(Spam, Eggs):                                  # Specify a list of anc
     def fooo_method(self):
         self.spam_method()
         self.eggs_method()                               # Retrieve superclasses attributes as if they were yours
-        print "fooo_method", self, self.fooo_class_attr
-        print self.__class__
+        print("fooo_method", self, self.fooo_class_attr)
+        print(self.__class__)
 
 foooer = Fooo()
 
@@ -114,9 +114,9 @@ foooer.spam_method()
 
 foooer.eggs_method()  # self is ALWAYS an instance of the subclass
 
-print foooer.spam_class_attr
-print foooer.eggs_class_attr
-print foooer.fooo_class_attr  # We have access to all own and ancestors' attributes
+print(foooer.spam_class_attr)
+print(foooer.eggs_class_attr)
+print(foooer.fooo_class_attr)  # We have access to all own and ancestors' attributes
 
 
 # Given that Python is a dynamic language...
@@ -130,10 +130,10 @@ spammer.surname = "Doe"
 spammer.age = 65
 spammer.male = True      # ... this is legal
 
-print spammer.name
-print spammer.surname
-print spammer.age
-print spammer.male
+print(spammer.name)
+print(spammer.surname)
+print(spammer.age)
+print(spammer.male)
 
 
 
@@ -152,14 +152,6 @@ print spammer.male
 #         - There is a convention to use underscore _ prefix
 #     - Classes definition is not closed. At any time you can add (or delete) an attribute
 #===============================================================================
-
-
-# ===============================================================================
-# TIME TO START WORKING:
-#   - http://www.itmaybeahack.com/book/python-2.6/html/p03/p03c03_patterns.html#state
-#   - How would you implement such a game?
-#   - open basic/exercises/03_classes.py and implement it in there
-# ===============================================================================
 
 
 #===============================================================================

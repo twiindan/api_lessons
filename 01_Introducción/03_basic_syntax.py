@@ -7,7 +7,7 @@
 
 
 spam = 10   # The variable spam now stores the number 10
-print spam
+print (spam)
 
 #===============================================================================
 # - Variables can store different data types like booleans, numbers or strings
@@ -23,13 +23,13 @@ my_variable = 'Python'  # my_variable stores the string Python
 #===============================================================================
 
 spam = 10               # spam stores the number 10
-print spam
+print (spam)
 
 spam = 5                # spam stores the number 5
-print spam
+print (spam)
 
 spam = 'Python'         # spam stores the string Python
-print spam
+print (spam)
 
 
 #===============================================================================
@@ -39,20 +39,13 @@ print spam
 
 
 spam = 10
-   print spam
-
-
-def spam():
-eggs = 10
-return eggs
-print spam()
-
+   print (spam)
 
 def spam():
     eggs = 10
     return eggs
 
-print spam()
+print(spam())
 
 
 #===============================================================================

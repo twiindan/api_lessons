@@ -119,22 +119,6 @@ print(foooer.eggs_class_attr)
 print(foooer.fooo_class_attr)  # We have access to all own and ancestors' attributes
 
 
-# Given that Python is a dynamic language...
-
-class Spam(object):
-    pass
-
-spammer = Spam()
-spammer.name = "John"
-spammer.surname = "Doe"
-spammer.age = 65
-spammer.male = True      # ... this is legal
-
-print(spammer.name)
-print(spammer.surname)
-print(spammer.age)
-print(spammer.male)
-
 
 
 #===============================================================================

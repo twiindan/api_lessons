@@ -103,17 +103,6 @@ spam = ("1st", "2nd", "3rd", "4th", "5th")
 print(spam[1:3])                             # Use colon and a second index for slicing
 print(type(spam[1:4]))                       # It generates a brand new object (shallow copy)
 
-spam = ["1st", "2nd", "3rd", "4th", "5th"]
-print(spam[:3])
-print(spam[1:7])
-print(spam[-2:7])                            # Negative indexes are also valid
-print(spam[3:-2])
-
-
-print(spam[1:7:2])                           # Use another colon and a third int to specify the step
-
-print(spam[::2])
-
 
 #===============================================================================
 # - In slicing Python is able to cleverly set the indexes
@@ -141,10 +130,6 @@ eggs = ['a', 'b', 'c']
 spam[1:3] = eggs
 print(spam)              # We can use slicing here too!
 
-spam = [1, 2, 3, 4, 5, 6, 7, 8]
-eggs = ['a', 'b', 'c']
-spam[1:7:2] = eggs
-print(spam)                       # We can use even slicing with step!!
 
 spam = [1, 2, 3, 4, 5]
 spam.append("a")

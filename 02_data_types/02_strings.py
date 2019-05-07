@@ -46,10 +46,6 @@ print(type(spam_eggs))
 #    - Useful to declare too much long string literals
 #===============================================================================
 
-spam_eggs = u"'\tspam\n \
-\teggs'"  # a unicode string
-print(spam_eggs)
-print(type(spam_eggs))
 
 #===============================================================================
 # - Backslash \ can even escape line breaks
@@ -60,7 +56,7 @@ print(type(spam_eggs))
 # Let's see strings operations
 
 spam = "spam"
-eggs = u'"Eggs"'
+eggs = "Eggs"
 
 num_str = str(2)                           # Convert integer into string
 print(num_str)
@@ -69,7 +65,7 @@ print(spam.capitalize())                    # Return a copy with first character
 
 print(spam)
 
-print(spam.endswith("am") )                 # Check string suffix
+print(spam.endswith("am"))                 # Check string suffix
 
 print(eggs.startswith(("eggs", "huevos")))  # Check string prefix (optionally use a tuple)
 
@@ -85,7 +81,6 @@ print(" | spam # ".strip())
 print(" | spam # ".strip(' |#'))      # Remove leading and trailing characters (only whitespace by default)
 
 print("spam, eggs, foo".split(", "))
-print("spam, eggs, foo".split(", ", 1))     # Split by given character, returning a list (optionally specify times to split)
 
 print(", ".join(("spam", "eggs", "foo")))   # Use string as separator to concatenate an iterable of strings
 

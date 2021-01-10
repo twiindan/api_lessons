@@ -95,7 +95,7 @@ my_func(2, 3, param3=5, param4=7)
 
 #===============================================================================
 # SOURCES:
-#  - http://docs.python.org/2/tutorial/controlflow.html#defining-functions
-#  - http://docs.python.org/2/tutorial/controlflow.html#more-on-defining-functions
-#  - http://docs.python.org/2/reference/compound_stmts.html#function
+#  - http://docs.python.org/3/tutorial/controlflow.html#defining-functions
+#  - http://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions
+#  - http://docs.python.org/3/reference/compound_stmts.html#function
 #===============================================================================

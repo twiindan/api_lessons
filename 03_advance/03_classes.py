@@ -140,9 +140,9 @@ print(foooer.fooo_class_attr)  # We have access to all own and ancestors' attrib
 
 #===============================================================================
 # SOURCES:
-#  - http://docs.python.org/2/tutorial/classes.html#a-first-look-at-classes
-#  - http://docs.python.org/2/library/functions.html#classmethod
-#  - http://docs.python.org/2/library/functions.html#staticmethod
-#  - http://docs.python.org/2/reference/compound_stmts.html#function
-#  - http://docs.python.org/2/reference/datamodel.html#types (see Classes and Class instances)
+#  - http://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes
+#  - http://docs.python.org/3/library/functions.html#classmethod
+#  - http://docs.python.org/3/library/functions.html#staticmethod
+#  - http://docs.python.org/3/reference/compound_stmts.html#function
+#  - http://docs.python.org/3/reference/datamodel.html#types (see Classes and Class instances)
 #===============================================================================

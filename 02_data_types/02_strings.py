@@ -110,16 +110,16 @@ print(spam)
 
 #===============================================================================
 # SOURCES:
-#  - http://docs.python.org/2/library/stdtypes.html#numeric-types-int-float-long-complex
-#  - http://docs.python.org/2/reference/lexical_analysis.html#strings
-#  - http://docs.python.org/2/reference/lexical_analysis.html#encodings
-#  - http://docs.python.org/2/library/stdtypes.html#string-methods
-#  - http://docs.python.org/2/library/string.html#formatstrings
+#  - http://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-long-complex
+#  - http://docs.python.org/3/reference/lexical_analysis.html#strings
+#  - http://docs.python.org/3/reference/lexical_analysis.html#encodings
+#  - http://docs.python.org/3/library/stdtypes.html#string-methods
+#  - http://docs.python.org/3/library/string.html#formatstrings
 #===============================================================================
 
 #==============================================================================
 # TIME TO START WORKING:
-#   - go to basic\exercises directory
-#   - execute the mod_04_strings.py
+#   - go to exercises directory
+#   - go to string_exercice.py
 #   - try to implement the functions indicated
 #==============================================================================

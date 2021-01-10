@@ -40,15 +40,6 @@ print(float(fooo))      # convert to float
 fooo += 1              # auto incremental
 print(fooo)
 
-# More on the quotient
-
-print(spam / eggs)          # quotient
-print(spam / float(eggs))   # quotient
-
-# More on the operations result type
-
-print(type(spam + eggs))
-print(type(float(spam) + eggs))
 
 #===============================================================================
 # - Python automatically infers the type of the result depending on operands type
@@ -85,5 +76,5 @@ print(type(eggs ** spam))
 
 #===============================================================================
 # SOURCES:
-#  - http://docs.python.org/2/library/stdtypes.html#numeric-types-int-float-long-complex
+#  - http://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-long-complex
 #===============================================================================

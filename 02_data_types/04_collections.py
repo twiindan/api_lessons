@@ -98,19 +98,6 @@ print(spam[-1])
 print(eggs[-2])
 print("spam"[-3])  # Access by index, even negative
 
-# Let's see how slicing works
-spam = ("1st", "2nd", "3rd", "4th", "5th")
-print(spam[1:3])                             # Use colon and a second index for slicing
-print(type(spam[1:4]))                       # It generates a brand new object (shallow copy)
-
-
-#===============================================================================
-# - In slicing Python is able to cleverly set the indexes
-#     - No IndexError when slicing index is out of range
-#     - First (0) and last (-1) index is automatically filled
-#     - Step is 1 by default and does not need to be multiple of sequence length
-#===============================================================================
-
 
 # Let's try something different
 
@@ -124,11 +111,6 @@ print(spam)
 #===============================================================================
 
 # Let's see more modification operations
-
-spam = [1, 2, 3, 4, 5]
-eggs = ['a', 'b', 'c']
-spam[1:3] = eggs
-print(spam)              # We can use slicing here too!
 
 
 spam = [1, 2, 3, 4, 5]
@@ -147,7 +129,7 @@ print(spam)              # Take care to not mix both commands!!
 
 spam = [1, 2, 3, 4, 5]
 spam.insert(3, "a")
-print(spam)              # The same like spam[3:3] = ["a"]
+print(spam)
 
 spam = [1, 2, 3, 4, 5]
 print(spam.pop())
@@ -163,7 +145,7 @@ print(spam)              # Delete an item
 
 #===============================================================================
 # SOURCES:
-#  - http://docs.python.org/2/tutorial/introduction.html#lists
-#  - http://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences
-#  - http://docs.python.org/2/tutorial/datastructures.html#sets
+#  - http://docs.python.org/3/tutorial/introduction.html#lists
+#  - http://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
+#  - http://docs.python.org/3/tutorial/datastructures.html#sets
 #===============================================================================

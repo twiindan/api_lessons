@@ -84,7 +84,7 @@ print(eggs)
 
 #===============================================================================
 # SOURCES:
-#  - http://docs.python.org/2/library/stdtypes.html#mapping-types-dict
+#  - http://docs.python.org/3/library/stdtypes.html#mapping-types-dict
 #  - http://stackoverflow.com/a/1419324
 #  - http://wiki.python.org/moin/TimeComplexity
 #===============================================================================

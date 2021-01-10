@@ -69,5 +69,5 @@ print(spam is not None)  # negated object identity
 
 #===============================================================================
 # SOURCES:
-#  - http://docs.python.org/2/library/stdtypes.html#boolean-operations-and-or-not
+#  - http://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not
 #===============================================================================

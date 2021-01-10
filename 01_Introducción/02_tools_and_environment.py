@@ -40,9 +40,9 @@
 
 #===============================================================================
 # - IDE?
-#     - PyCharm (we have licenses, ask IT)
+#     - PyCharm
 #     - Eclipse + Pydev
-#     - NetBeans
+#     - Visual Studio Code
 #     - NINJA IDE
 #     - Python's IDLE (not recommendable at all)
 #     - ...

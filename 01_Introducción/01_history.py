@@ -44,6 +44,17 @@
 #                Programming Community Index.
 #===============================================================================
 
+#===============================================================================
+# February 2020: Python 2.X support is finished. All the development is focused in Python 3.X
+# December 2020: Python is the second most popular language on GitHub.com and it is
+#                consistently in Top10 according to jobs postings and to the TIOBE
+#                Programming Community Index. Python has a 12.31 Rating in the Tiobe Index.
+#                StackOverflow survey puts Python as third language more used, only overcome by JavaScript and SQL.
+#                Python is the second more loved language and the most wanted
+#
+#===============================================================================
+
+
 
 #===============================================================================
 # SOURCES:
